@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/estilosTema5.css">
+	<script src="js/arrayAlumnos.js"></script>
+	<script src="js/form03funcion.js"></script>
+</head>
+<body>
+	<h1>Aplicación 3 - Ventanas</h1>
+	<div id="content">
+	<script>
+		var valor=prompt("¿Cuátos estudiantes de ambos TURNOS desea ver?","1");
+		if(valor > 0 && valor <=alumnos.length)
+		{
+			for (var i = 0; i < valor; i++){
+				num= alumnos[i][0];
+				nom= alumnos[i][1];
+				ape= alumnos[i][2];
+				tur= fnTurno(alumnos[i][3]);
+				res= "("+(i+1)+"/"+alumnos.length+")";
+				fnGenerarTabla(res,num,nom,ape,tur)
+			}
+		}else{
+			alert("Solo se tiene resgistrado "+alumnos.length+" alumnnos");
+			document.writeln("<h2>Inténlo nuevamente...</h2>");
+		}
+	</script>
+	<table border='1'>
+		<tr>
+			<td colspan="3">Col1-fila1</td>
+<!--		<td>Col2-fila1</td>
+			<td>Col3-fila1</td> -->
+			<td rowspan="3">Col4-fila1</td>
+		</tr>
+		<tr>
+			<td>Col1-fila2</td>
+			<td>Col2-fila2</td>
+			<td>Col3-fila3</td>
+<!--		<td>Col4-fila3</td> -->
+		</tr>
+		<tr>
+			<td>Col1-fila3</td>
+			<td>Col2-fila3</td>
+			<td>Col3-fila3</td>
+<!--		<td>Col4-fila3</td> -->
+		</tr>
+	</table>
+	</div>
+</body>
+</html>

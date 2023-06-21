@@ -1,0 +1,47 @@
+.contenedor1{
+    background-color: aqua;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contenedor1 div {background-color: gold; margin: 10px 5px; padding: 5px; width: 50px;}
+
+.contenedor2{
+    background-color: tomato;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.contenedor2 div {background-color: gold; margin: 10px 5px; padding: 5px; width: 50px;}
+
+.contenedor3{
+    background-color: yellowgreen;
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+
+.contenedor3 div {background-color: gold; margin: 10px 5px; padding: 5px; width: 50px;}
+
+.contenedor4{
+    background-color: red;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contenedor4 div {background-color: gold; margin: 10px 5px; padding: 5px; width: 50px;}
+
+.contenedor5{
+    background-color: blanchedalmond;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.contenedor5 div {background-color: gold; margin: 10px 5px; padding: 5px; width: 50px;}
+
+.contenedor6{
+    background-color: yellow;
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+
+.contenedor6 div {background-color: gold; margin: 10px 5px; padding: 5px; width: 50px;}
